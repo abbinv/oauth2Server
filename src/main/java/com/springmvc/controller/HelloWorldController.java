@@ -25,7 +25,7 @@ public class HelloWorldController {
 
     @RequestMapping(value = "/admin/", method = RequestMethod.GET)
     public ResponseEntity<String> getHelloAdmin(HttpServletRequest request)throws IOException {
-        LOG.info("User call received");
+        LOG.info("Admin call received");
         return new ResponseEntity<String>("Hello Admin", HttpStatus.OK);
     }
 }
